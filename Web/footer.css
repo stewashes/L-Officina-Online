@@ -1,0 +1,32 @@
+.footer{
+  overflow: hidden;
+  background-color: #333;
+  flex-direction: row;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.footer div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: whitesmoke;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 0;
+  align-content: center;
+  align-items: center;
+  background: #b71c1c;
+}
+
+.footer .authors a{
+  color: whitesmoke;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.footer .authors a:hover{
+  background-color: #555;
+  color: whitesmoke;
+}

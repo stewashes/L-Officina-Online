@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <title>L'Offina Online - Tutorial</title>
+    <link rel="icon" href="../icons/tool.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../home.css" />
+    <link rel="stylesheet" href="./posts.css" />
+  </head>
+
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="../home.html" class="active">Home</a>
+      <a href="javascript:void(0);" id="new-post-button">
+        Nuovo Tutorial <i class="fa fa-plus-square"></i>
+      </a>
+      <div class="input-container">
+        <div class="search-container" id="delete-bar">
+          <input
+            type="text"
+            id="delete-title"
+            placeholder="Elimina Tutorial..."
+          />
+          <button id="delete"><i class="fa fa-trash"></i></button>
+        </div>
+
+        <div class="search-container">
+          <input
+            type="text"
+            id="search-title"
+            placeholder="Cerca Tutorial..."
+          />
+          <button id="search">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+
+      <a href="javascript:void(0);" class="icon" onclick="comparsaMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div class="posts-container">
+      <!--
+      <div class="toolbar">
+        <button class="our-button" id="new-post-button">
+          <i class="fas fa-plus"></i>Nuovo Post
+        </button>
+        <input id="titles" class="our-input" />
+        <button class="our-button" id="delete">elimina</button>
+        <input type="text" id="search" />
+        <button class="our-button" id="search-engine">Cerca</button>
+      </div>
+      -->
+      <div class="posts-content" id="posts-content"></div>
+
+      <div id="new-post-dialog" class="our-dialog">
+        <div class="dialog-content post-dialog">
+          <div class="header">
+            <h1 class="titolo">Inserisci Tutorial</h1>
+            <i class="fa fa-window-close" id="new-post-close-button"></i>
+          </div>
+          <div class="content">
+            <label>Titolo</label>
+            <input id="title" class="our-input" />
+            <label>Tutorial</label>
+            <textarea id="message" class="our-textarea" rows="4"></textarea>
+          </div>
+          <div class="actions">
+            <button class="crea" id="send-new-post-button">
+              Crea Tutorial
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../home.js"></script>
+    <script src="./posts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <title>L' Officina Online - Chi Siamo</title>
+    <link rel="icon" href="../icons/tool.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../home.css" />
+    <link rel="stylesheet" href="./about_us.css" />
+  </head>
+
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="../home.html" class="active">Home</a>
+      <a href="../posts/posts.html">Tutorial</a>
+      <a href="../coming_soon/coming_soon.html">Dove Siamo</a>
+      <a href="../registrazione/registrazione.html" id="link-registrazione"
+        >Registrati</a
+      >
+      <a href="../login/login.html" id="link-login">Log-In</a>
+      <div class="dropdown" id="link-profilo" style="display:none">
+        <button class="dropbtn">
+          Il tuo Profilo
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="./modificaProfilo/modificaProfilo.html">Modifica Profilo</a>
+          <a href="./home.html" onclick="logout()">Log-Out</a>
+        </div>
+      </div>
+      <!--metto javascript:void(0);" perchè in questo caso uso a( anchor tag) senza nessun link-->
+      <a href="javascript:void(0);" class="icon" onclick="comparsaMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div class="container">
+      <div class="id_card">
+        <div class="id_photo">
+          <img class="avatar" src="../images/avatar.png" />
+        </div>
+        <div class="nome">stefano lavaggi</div>
+        <p class="descrizione">
+          Stefano Lavaggi (nato il 1 Febbraio 1998) &egrave; uno studente universitario
+          iscritto all' Universit&agrave; di Genova.
+        </p>
+        <div class="social-box">
+          <a href="https://www.facebook.com/" title="Facebook"
+            ><img width="32" src="../icons/fb.png" alt="Facebook"
+          /></a>
+          <a href="https://www.youtube.com/" title="Youtube"
+            ><img width="32" src="../icons/yt.png" alt="Youtube"
+          /></a>
+          <a href="https://www.instagram.com/" title="Instagram"
+            ><img width="32" src="../icons/insta.png" alt="Instagram"
+          /></a>
+        </div>
+      </div>
+      <div class="id_card">
+        <div class="id_photo">
+          <img class="avatar" src="../images/edd-china.jpg" />
+        </div>
+        <div class="nome">edd china</div>
+        <p class="descrizione">
+          Edward John China (nato il 9 maggio 1971) &egrave; un presentatore televisivo
+          inglese, meccanico, motorista e inventore, conosciuto come
+          presentatore e meccanico nel programma televisivo "Affari a 4 Ruote".
+          Dal 2019 ha iniziato a collaborare con Cardano e Lavaggi per la
+          crescita e lo sviluppo dell' Officina Online diventando così il
+          meccanico ufficiale e consigliere della start-up.
+        </p>
+        <div class="social-box">
+          <a href="https://www.facebook.com/" title="Facebook"
+            ><img width="32" src="../icons/fb.png" alt="Facebook"
+          /></a>
+          <a href="https://www.youtube.com/" title="Youtube"
+            ><img width="32" src="../icons/yt.png" alt="Youtube"
+          /></a>
+          <a href="https://www.instagram.com/" title="Instagram"
+            ><img width="32" src="../icons/insta.png" alt="Instagram"
+          /></a>
+        </div>
+      </div>
+      <div class="id_card">
+        <div class="id_photo">
+          <img class="avatar" src="../images/avatar.png" />
+        </div>
+        <div class="nome">matteo cardano</div>
+        <p class="descrizione">
+          Matteo Cardano (nato il 2 Giugno 1997) &egrave; uno studente universitario
+          iscritto all' Universit&agrave; di Genova. Da grande appassionato di
+          programmi televisivi trattanti temi automobilistici ha realizzato il
+          suo sogno con l' incontro del mitico Edd China (in un incidente
+          stradale), con il quale ha realizzato l'idea dell' Officina Online.
+          Ora è il CEO della sua nuova start-up.
+        </p>
+        <div class="social-box">
+          <a href="https://www.facebook.com/" title="Facebook"
+            ><img width="32" src="../icons/fb.png" alt="Facebook"
+          /></a>
+          <a href="https://www.youtube.com/" title="Youtube"
+            ><img width="32" src="../icons/yt.png" alt="Youtube"
+          /></a>
+          <a href="https://www.instagram.com/" title="Instagram"
+            ><img width="32" src="../icons/insta.png" alt="Instagram"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <script src="../home.js"></script>
+  </body>
+</html>

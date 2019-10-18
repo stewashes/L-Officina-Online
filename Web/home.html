@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <title>L' Officina Online</title>
+    <link rel="icon" href="./icons/tool.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./home.css" />
+    <link rel="stylesheet" href="./galleria-foto.css" />
+    <link rel="stylesheet" href="./footer.css" />
+  </head>
+
+  <body>
+    <div class="container-1">
+      <h1>l' officina online</h1>
+    </div>
+
+    <div class="topnav" id="myTopnav">
+      <a href="./home.html" class="active">Home</a>
+      <a href="./posts/posts.html">Tutorial</a>
+      <a href="./maps/provaMappa.html">Dove Siamo</a>
+      <a href="./about_us/about_us.html">Chi Siamo</a>
+      <a href="./registrazione/registrazione.html" id="link-registrazione"
+        >Registrati</a
+      >
+      <a href="./login/login.html" id="link-login">Log-In</a>
+      <div class="dropdown" id="link-profilo" style="display:none">
+        <button class="dropbtn">
+          Il tuo Profilo
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="./modificaProfilo/modificaProfilo.html">Modifica Profilo</a>
+          <a href="./home.html" onclick="logout()">Log-Out</a>
+        </div>
+      </div>
+      <!--metto javascript:void(0);" perchè in questo caso uso a( anchor tag) senza nessun link-->
+      <a href="javascript:void(0);" class="icon" onclick="comparsaMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div class="container-2">
+      <h1>benvenuto nell' officina online</h1>
+      <h2>
+        vuoi riparare il tuo bolide senza spendere un capitale portandolo dal
+        meccanico? Sei nel posto giusto!
+      </h2>
+      <h3>
+        Nella sezione 'tutorial' troverai una vastissima gamma di tutorial
+        scritti da professionisti del settore su come riparare automobili o
+        moto. Seguendoli passo passo il tuo bolide tornerà a sfecciare!
+      </h3>
+
+      <div class="container-3">
+        <div class="gallery-responsive">
+          <div class="gallery">
+            <img src="./images/fanale.jpg" alt="Sostituzione Fanale" />
+            <div class="overlay">
+              <a href="./coming_soon/coming_soon.html" class="text"
+                >Sostituzione Fanale</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-responsive">
+          <div class="gallery">
+            <img src="./images/vetro.jpg" alt="Sostituzione Parabrezza" />
+            <div class="overlay">
+              <a href="./coming_soon/coming_soon.html" class="text"
+                >Sostituzione Parabrezza</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-responsive">
+          <div class="gallery">
+            <img src="./images/batteria.jpg" alt="Sostituzione batteria" />
+            <div class="overlay">
+              <a href="./coming_soon/coming_soon.html" class="text"
+                >Sostituzione Batteria</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-responsive">
+          <div class="gallery">
+            <img src="./images/radio.jpg" alt="Installazione Autoradio" />
+            <div class="overlay">
+              <a href="./coming_soon/coming_soon.html" class="text"
+                >Installazione Autoradio</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-responsive">
+          <div class="gallery">
+            <img src="./images/gomma.jpg" alt="Sostituzione Pneumatico" />
+            <div class="overlay">
+              <a href="./coming_soon/coming_soon.html" class="text"
+                >Sostituzione Pneumatico</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-responsive">
+          <div class="gallery">
+            <img src="./images/catene.jpg" alt="Installazione Catene da Neve" />
+            <div class="overlay">
+              <a href="./coming_soon/coming_soon.html" class="text"
+                >Installazione catene da neve</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="authors">
+        Autori:
+        <a href="mailto:ste.lavaggi@gmail.com" title="Scrivi a Stefano Lavaggi"
+          >Stefano Lavaggi</a
+        >
+        <a href="mailto:cardano.matte@gmail.com" title="Scrivi a Cardano Matteo"
+          >Cardano Matteo</a
+        >
+      </div>
+      <div class="social">
+        Seguici anche su:
+        <a href="https://www.facebook.com/" title="Facebook"
+          ><img width="32" src="./icons/fb.png" alt="Facebook"
+        /></a>
+        <a href="https://www.youtube.com/" title="Youtube"
+          ><img width="32" src="./icons/yt.png" alt="Youtube"
+        /></a>
+        <a href="https://www.instagram.com/" title="Instagram"
+          ><img width="32" src="./icons/insta.png" alt="Instagram"
+        /></a>
+      </div>
+      <h4>&copy; 2019 L Officina Online s.p.a</h4>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./home.js"></script>
+  </body>
+</html>
+
+<!-- HTML VALIDATO -->

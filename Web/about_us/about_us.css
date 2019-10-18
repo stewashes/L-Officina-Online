@@ -1,0 +1,58 @@
+body {
+    background-image: url(../images/motore-blur.jpg);
+    background-position: center;
+    overflow: auto;
+}
+
+.topnav {
+    top: 0;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.id_card {
+    padding: 16px 14px;
+    margin: 8px;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 17px;
+    max-width: 256px;
+}
+
+.avatar {
+    border-radius: 50%;
+    height: 256px;
+    width: 256px;
+}
+
+.nome {
+    padding: 2px;
+    background-color: #b71c1c;
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.descrizione{
+    padding: 4px 2px;
+}
+
+.social-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+/*
+@media screen and (max-width: 930px) {
+    .container {
+        flex-direction: column;
+    }
+}
+*/

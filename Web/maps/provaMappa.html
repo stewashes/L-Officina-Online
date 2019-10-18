@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../home.css" />
+    <link rel="stylesheet" href="./provaMappa.css" />
+    <link
+      href="https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="../home.html" class="active">Home</a>
+      <a href="../posts/posts.html">Tutorial</a>
+      <a href="../about_us/about_us.html">Chi Siamo</a>
+      <a href="../registrazione/registrazione.html" id="link-registrazione"
+        >Registrati</a
+      >
+      <a href="../login/login.html" id="link-login">Log-In</a>
+      <div class="dropdown" id="link-profilo" style="display:none">
+        <button class="dropbtn">
+          Il tuo Profilo
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="../modificaProfilo/modificaProfilo.html">Modifica Profilo</a>
+          <a href="../home.html" onclick="logout()">Log-Out</a>
+        </div>
+      </div>
+      <!--metto javascript:void(0);" perchè in questo caso uso a( anchor tag) senza nessun link-->
+      <a href="javascript:void(0);" class="icon" onclick="comparsaMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div class="map-container">
+      <div id="map"></div>
+      <p>
+        Nella mappa sono segnati i nostri Centri di assistenza. Per ora siamo
+        solamente a Genova, ma pian piano siamo sicuri che ci espanderemo in
+        tutta Italia!
+      </p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../home.js"></script>
+    <script src="https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js"></script>
+    <script src="./provaMappa.js"></script>
+  </body>
+</html>

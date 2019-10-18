@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <title>L'Offina Online - Registrazione</title>
+    <link rel="icon" href="../icons/tool.ico" />
+    <link rel="stylesheet" href="../home.css" />
+    <link rel="stylesheet" href="./registrazione.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="../home.html" class="active">Home</a>
+      <a href="../posts/posts.html">Tutorial</a>
+      <a href="../coming_soon/coming_soon.html">Dove Siamo</a>
+      <a href="../coming_soon/coming_soon.html">Contatti</a>
+      <a href="../login/login.html">Log-In</a>
+      <a href="javascript:void(0);" class="icon" onclick="comparsaMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div class="align-center">
+      <form id="form" class="registrazione-form">
+        <span>Nome</span>
+        <input
+          id="firstname"
+          pattern="[A-Za-z]+"
+          title="Inserire solo caratteri alfabetici"
+          required
+        />
+        <span>Cognome</span>
+        <input
+          id="lastname"
+          pattern="[A-Za-z]+"
+          title="Inserire solo caratteri alfabetici"
+          required
+        />
+        <span>Citt&agrave;</span>
+        <input
+          id="city"
+          pattern="[A-Za-z]+"
+          title="Inserire solo caratteri alfabetici"
+        />
+        <span>Username</span>
+        <input id="username" pattern="[a-zA-Z]+" required />
+        <span>Password</span>
+        <input
+          id="password"
+          type="password"
+          minlength="6"
+          autocomplete="off"
+          title="Inserire almeno 6 caratteri"
+          required
+        />
+        <span>Conferma password</span>
+        <input
+          id="conferma"
+          type="password"
+          minlength="6"
+          autocomplete="off"
+          title="Inserire almeno 6 caratteri"
+          required
+        />
+        <div id="confermamsg">
+          Le password non corrispondono. Riprova
+        </div>
+        <button id="loginButton">Registrati</button>
+      </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./registrazione.js"></script>
+    <script src="../home.js"></script>
+  </body>
+</html>
+
+<!--HTML VALIDATO-->

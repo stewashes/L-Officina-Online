@@ -1,0 +1,52 @@
+.text {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #b71c1c;
+}
+
+div.gallery {
+  position: relative;
+  width: 100%;
+  margin: 4px;
+}
+
+div.gallery:hover .overlay {
+  opacity: 1;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.gallery-responsive {
+  padding: 0 8px;
+  float: left;
+  width: 50%;
+}
+
+@media only screen and (max-width: 700px) {
+  .gallery-responsive {
+    width: 90%;
+  }
+}

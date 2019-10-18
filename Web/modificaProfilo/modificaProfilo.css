@@ -1,0 +1,85 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url(../images/motore-blur.jpg);
+  background-position: center;
+  background-size: cover;
+  overflow: auto;
+}
+
+.topnav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 700px){}
+.topnav.responsive {
+    position: absolute;
+}
+
+.registrazione-form {
+  min-width: 400px;
+  min-height: 400px;
+  height: auto;
+  padding: 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: whitesmoke;
+  font-size: 17px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.registrazione-form input {
+  height: 40px;
+  font-size: 17px;
+  border: 1px solid #b71c1c;
+}
+
+.align-center {
+  margin-top: 96px;
+  margin-bottom: 48px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+#modificaButton {
+  padding: 14px 16px;
+  background-color: #b71c1c;
+  border: none;
+  color: whitesmoke;
+  font-size: 17px;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+}
+
+#modificaPassword {
+  padding: 14px 16px;
+  background-color: #b71c1c;
+  border: none;
+  color: whitesmoke;
+  font-size: 17px;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+}
+
+#confermamsg{
+  color:#B00020;
+  display:none;
+}
+
+.linea {
+  border-left: 6px solid #b71c1c;
+  min-height: 400px;
+}

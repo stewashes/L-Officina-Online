@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <title>L'Offina Online - Login</title>
+    <link rel="icon" href="../icons/tool.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./login.css" />
+    <link rel="stylesheet" href="../home.css" />
+  </head>
+
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="../home.html" class="active">Home</a>
+      <a href="../posts/posts.html">Tutorial</a>
+      <a href="../maps/maps.html">Dove Siamo</a>
+      <a href="../about_us/about_us.html">Contatti</a>
+      <a href="../registrazione/registrazione.html">Registrati</a>
+      <a href="javascript:void(0);" class="icon" onclick="comparsaMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <div class="align-center">
+      <form id="form" class="login-form">
+        <span>Username</span>
+        <input
+          id="username"
+          pattern="[a-zA-Z]+"
+          title="Inserire solo caratteri alfabetici"
+          autocomplete="off"
+          required
+        />
+        <span>Password</span>
+        <input
+          id="password"
+          type="password"
+          minlength="6"
+          autocomplete="off"
+          title="Inserire almeno 6 caratteri"
+          required
+        />
+        <!--<input type="submit" value="Submit">-->
+        <button id="loginButton">Entra</button>
+      </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./login.js"></script>
+    <script src="../home.js"></script>
+  </body>
+</html>
+
+<!--HTML VALIDATO-->

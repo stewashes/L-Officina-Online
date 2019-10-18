@@ -1,0 +1,232 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../images/motore-blur.jpg);
+  background-position: center;
+  background-size: cover;
+  overflow: auto;
+}
+
+.topnav {
+  top: 0;
+  width: 100%;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.posts-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.posts-container .posts-content {
+  flex: 1;
+}
+
+#new-post-dialog {
+  display: none;
+}
+
+.post-dialog .content {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+}
+
+.posts-content .post {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.post-card {
+  background-color: white;
+  width: 600px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+}
+
+.titolo {
+  background: none;
+}
+
+.post-card .title {
+  font-size: 20px;
+}
+
+.post-card .message {
+  font-size: 16px;
+}
+
+.post-card .author {
+  text-align: right;
+  font-style: italic;
+  color: #b71c1c;
+}
+
+.post-dialog .content label:nth-of-type(2) {
+  font-size: 17px;
+  margin-top: 8px;
+}
+
+.our-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(245, 245, 245, 0.4);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.our-dialog .dialog-content {
+  min-width: 400px;
+  min-height: 300px;
+  max-width: 90%;
+  max-height: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.our-dialog .dialog-content {
+  min-width: 400px;
+  min-height: 300px;
+  overflow: hidden;
+}
+
+.our-dialog .dialog-content .header {
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.our-dialog .dialog-content .header h1 {
+  flex: 1;
+  color: whitesmoke;
+  margin-left: 8px;
+  font-size: 26px;
+}
+
+.our-dialog .dialog-content .header i {
+  flex: 0 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: whitesmoke;
+}
+
+.our-dialog .dialog-content .header i:hover {
+  background-color: #555;
+  align-self: stretch;
+  cursor: pointer;
+}
+
+.our-dialog .dialog-content .content {
+  flex: 1;
+  background-color: whitesmoke;
+  padding: 8px;
+}
+
+.our-dialog .dialog-content .actions {
+  flex: 0 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: whitesmoke;
+}
+
+.our-input {
+  height: 40px;
+  font-size: 16px;
+  border: 1px solid #555;
+  outline: none;
+  padding: 4px;
+  background-color: whitesmoke;
+}
+
+.our-textarea {
+  font-size: 16px;
+  border: 1px solid #555;
+  outline: none;
+  padding: 4px;
+  resize: none;
+  background-color: whitesmoke;
+}
+
+.crea {
+  padding: 14px 16px;
+  background-color: #b71c1c;
+  border: none;
+  color: whitesmoke;
+  font-size: 17px;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+}
+
+.topnav .search-container {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 8px;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: whitesmoke;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #555;
+  color: whitesmoke;
+}
+
+@media screen and (max-width: 780px) {
+  .input-container {
+    flex-direction: column;
+  }
+  .topnav .search-container {
+    display: none;
+  }
+  .topnav .search-container button {
+    text-align: left;
+    margin: 0;
+  }
+  .topnav input[type=text] {
+    padding: 6px;
+    margin: 0px;
+  }
+  .topnav.responsive .search-container {
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: row;
+  }
+}

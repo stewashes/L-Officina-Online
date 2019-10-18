@@ -1,0 +1,228 @@
+body {
+  margin: 0;
+}
+
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,p,span{
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+}
+
+/*Incorporare un font personalizzato con @font-face*/
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto.ttf");
+  }
+
+@font-face{
+  font-family: "Cocogoose Pro Italic";
+  src: url("fonts/Cocogoose Pro Italic-trial.ttf");
+}
+
+
+@font-face{
+  font-family: "Cocogoose Pro";
+  src: url("fonts/Cocogoose Pro-trial.ttf");
+}
+
+.topnav {
+  /*The overflow property specifies whether to clip content or to
+  add scrollbars when an element's content is too big
+  to fit in a specified area.*/
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+.topnav a {
+  /*float per mettere gli a (htlml) tutti a sinistra)*/
+  float: left;
+  /*display per bloccarlo ha altre operazioni tipo none per farlo scomparire*/
+  display: block;
+  /*colore delle scritte dentro l' a*/
+  color: whitesmoke;
+  text-align: center;
+  /*dimensione del "bottone" 14px sopra 16px ai lati ( vedi su chrome )*/
+  padding: 14px 16px;
+  /*per togliere la sottolineatura che è presente di default sui link*/
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  /*classe solo per la home solamente per metterla rossa*/
+  background-color: #b71c1c;
+  color: white;
+}
+
+/*inizialmente l icona hambuger non si deve vedere, perchè dovra
+comparire solamente quando la dimensione della schermata è minore di 600px*/
+.topnav .icon {
+  display: none;
+}
+
+/*quelli che iniziano per @ sono regole, in questa dico che quando
+ la larghezza è minore di 600px devo fare le cose scritte all'interno della regola*/
+
+@media screen and (max-width: 780px) {
+
+/*il not first child mi serve per fare rimanere la scritta home anche se la larghezza a < 600px
+perchè se lo togliessi mi farebbe scomparire tutti compresa la home, questo perche sono tutti dei link (a)*/
+
+  .topnav a:not(:first-child) {
+    /*con dislpay none li faccio scomparire*/
+    display: none;
+
+  }
+
+  .topnav a.icon {
+    /*icona hamburger a destra e sempre presente*/
+    float: right;
+    display: block;
+  }
+
+  /*il dropdown è il menu a tendina che è per il profilo anch'essa
+   la faccio scomparire come i link (a)*/
+  .topnav .dropdown{
+    display: none;
+  }
+
+  /*quando abbiamo lo schermo piccolo la nostra sbarra non sarà piu della classe
+  topnav ma topnavresponsive grazie al javascript che gli cambia il nome
+  ( lo si vede da chrome rimpicciolendo la pagina)*/
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .topnav.responsive .dropdown {
+    display: block;
+    float: none;
+  }
+  .topnav.responsive .dropdown-content {
+    position: relative;
+  }
+
+  /*il dropdown dropbtn è il bottone del menu a tendina*/
+  .topnav.responsive .dropdown .dropbtn {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+
+  /*finito il media*/
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: whitesmoke;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: whitesmoke;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: whitesmoke;
+}
+
+.dropdown-content a:hover {
+  background-color: #b71c1c;
+  color: whitesmoke;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*sfondo iniziale della macchina*/
+.container-1 {
+  background-position: center;
+  background-image: url(./images/macchina.jpg);
+  height: 550px;
+}
+
+/*sfondo del motore*/
+.container-2 {
+  background-position: center;
+  background-size: cover;
+  background-image: url(./images/motore.jpg);
+  overflow: auto;
+}
+
+h1 {
+  color: whitesmoke;
+  background: rgba(0, 0, 0, 0.4);
+  font-family: 'Cocogoose Pro Italic';
+  font-size: 60px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.container-2 h2{
+  padding: 10px;
+  color: whitesmoke;
+  background: rgba(0, 0, 0, 0.4);
+  font-family: 'Cocogoose Pro Italic';
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.container-2 h3{
+  padding: 10px;
+  color: whitesmoke;
+  background: rgba(0, 0, 0, 0.4);
+  font-family: 'Cocogoose Pro Italic';
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.container-3 {
+  width: 70%;
+  margin: 30px auto;
+}

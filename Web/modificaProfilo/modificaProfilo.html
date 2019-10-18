@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <title>L'Officina Online - Modifica Profilo</title>
+    <link rel="icon" href="../icons/tool.ico" />
+    <link rel="stylesheet" href="../home.css" />
+    <link rel="stylesheet" href="./modificaProfilo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="../home.html" class="active">Home</a>
+      <a href="../posts/posts.html">Tutorial</a>
+      <a href="../coming_soon/coming_soon.html">Dove Siamo</a>
+      <a href="../coming_soon/coming_soon.html">Contatti</a>
+      <a href="javascript:void(0);" class="icon" onclick="comparsaMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div class="align-center">
+      <form id="form" class="registrazione-form">
+        <span>Nome</span>
+        <input
+          id="firstname"
+          pattern="[A-Za-z]+"
+          title="Inserire solamente caratteri alfabetici"
+          required
+        />
+        <span>Cognome</span>
+        <input
+          id="lastname"
+          pattern="[A-Za-z]+"
+          title="Inserire solamente caratteri alfabetici"
+          required
+        />
+        <span>Citt&agrave;</span>
+        <input
+          id="city"
+          pattern="[A-Za-z]+"
+          title="Inserire solamente caratteri alfabetici"
+        />
+        <button id="modificaButton">modifica profilo</button>
+      </form>
+
+      <div class="linea"></div>
+
+      <form id="password-form" class="registrazione-form">
+        <span>Password attuale</span>
+        <input
+          id="oldpassword"
+          type="password"
+          minlength="6"
+          autocomplete="off"
+          title="Inserire almeno 6 caratteri"
+          required
+        />
+        <span>Nuova password</span>
+        <input
+          id="newpassword"
+          type="password"
+          minlength="6"
+          autocomplete="off"
+          title="Inserire almeno 6 caratteri"
+          required
+        />
+        <span>Conferma nuova password</span>
+        <input
+          id="conferma"
+          type="password"
+          minlength="6"
+          autocomplete="off"
+          title="Inserire almeno 6 caratteri"
+          required
+        />
+        <div id="confermamsg">
+          Le password non corrispondono. Riprova
+        </div>
+
+        <button id="modificaPassword">modifica password</button>
+      </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../home.js"></script>
+    <script src="./modificaProfilo.js"></script>
+  </body>
+</html>
+
+<!-- HTML VALIDATO -->

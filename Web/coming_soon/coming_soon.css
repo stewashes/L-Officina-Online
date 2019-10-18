@@ -1,0 +1,54 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  h1{
+    background: none;
+  }
+
+  .sfondo {
+    background-image: url('../images/coming_soon.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: 'Cocogoose Pro Italic';
+    font-size: 25px;
+  }
+
+  .centro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 8px;
+  }
+
+.titolo{
+      margin: 0;
+      padding: 0;
+      background: rgba(0, 0, 0, 0.5);
+      text-transform: uppercase;
+      text-align: center;
+  }
+
+a{
+    color: white;
+    font-family: 'Cocogoose Pro Italic';
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: 311px){
+    .centro {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      background: rgba(0, 0, 0, 0.5);
+    }
+  }
