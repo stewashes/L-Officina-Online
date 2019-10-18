@@ -22,7 +22,9 @@ qui troviamo una piccola descrizione in merito agli sviluppatori dell’applicaz
 ### La nostra struttura dati 
 
 la nostra struttura dati si basa su tre tabelle le quali ci permettono di gestire internamente gli utenti registrati ma anche i posto, in particolare:
-![alt text](C:\Users\stela\Documents\Università\Anno Accademico 2018-19\Sviluppo di Applicazioni Web\database.png)
+
+![Screenshot](database.png)
+
 “users” per  gestire i dati inseriti dall’utente  
 “posts” per gestire i vari tutorial  
 “tokens”  per gestire le “ sessioni “ 
